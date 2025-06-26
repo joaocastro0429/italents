@@ -57,6 +57,7 @@ const userUpdate = async (req, res) => {
     })
   }
 }
+// DELETE /users/:id → Deletar um usuário
 const userDelete = async (req, res) => {
   const { id } = req.params;
   try {
