@@ -1,6 +1,10 @@
 import express from 'express'
+import connectionDb from './database/db.js'
+import 'dotenv/config.js'
 
 const server= express()
+
+connectionDb()
 
 
 server.get("/",(req,res)=>{
